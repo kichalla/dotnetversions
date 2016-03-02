@@ -6,6 +6,7 @@ namespace LibraryA
     {
         public double Add(double x, double y)
         {
+ 	    var greeter = new LibraryB.Classd1();
             return x + y;
         }
 
