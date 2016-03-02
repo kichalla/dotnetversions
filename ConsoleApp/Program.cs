@@ -6,7 +6,11 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var calculator = new LibraryA.Calculator();
+            var sum = calculator.Add(10, 20);
+            var greeter = new LibraryB.Class1();
+
+            Console.WriteLine($"{sum}, {greeter.Greeting()}");
         }
     }
 }
